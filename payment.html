@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Section</title>
+    <link rel="shortcut icon" href="profile/payment.png">
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+    <div class="box">
+        <div class="imgBx">
+            <img src="https://www.theindianwire.com/wp-content/uploads/2020/10/Google-Pay-Logo-Icon-PNG.png" id="img1" alt="gpay">
+        </div>
+        <div class="content">
+            <h2>Google Pay<br><button onclick="changeImage1()"><h3>Click here & Scan</h3></button></h2>
+        </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+            <img src="https://www.searchpng.com/wp-content/uploads/2019/12/PhonePe-Logo-PNG.jpg" id="img2" alt="PhonePe">
+        </div>
+        <div class="content">
+            <h2>PhonePe<br><button onclick="changeImage2()"><h3>Click here & Scan</h3></button></h2>
+        </div>
+    </div>
+    <div class="box">
+        <div class="imgBx">
+            <img src="https://i2.wp.com/www.talkerbud.com/wp-content/uploads/2020/03/fdasf.png" id="img3" alt="Paytm">
+        </div>
+        <div class="content">
+            <h2>Paytm<br><button onclick="changeImage3()"><h3>Click here & Scan</h3></button></h2>
+        </div>
+    </div>
+    <script>
+        function changeImage1() {
+                var image = document.getElementById('img1');
+                if (image.src.match("https://www.theindianwire.com/wp-content/uploads/2020/10/Google-Pay-Logo-Icon-PNG.png")) {
+                    image.src = "profile/gpay.jpeg";
+                }
+                else {
+                    image.src = "https://www.theindianwire.com/wp-content/uploads/2020/10/Google-Pay-Logo-Icon-PNG.png";
+                }
+            }
+        function changeImage2() {
+                var image = document.getElementById('img2');
+                if (image.src.match("https://www.searchpng.com/wp-content/uploads/2019/12/PhonePe-Logo-PNG.jpg")) {
+                    image.src = "profile/Phonepe.jpeg";
+                }
+                else {
+                    image.src = "https://www.searchpng.com/wp-content/uploads/2019/12/PhonePe-Logo-PNG.jpg";
+                }
+            }
+        function changeImage3() {
+                var image = document.getElementById('img3');
+                if (image.src.match("https://i2.wp.com/www.talkerbud.com/wp-content/uploads/2020/03/fdasf.png")) {
+                    image.src = "profile/paytm.jpeg";
+                }
+                else {
+                    image.src = "https://i2.wp.com/www.talkerbud.com/wp-content/uploads/2020/03/fdasf.png";
+                }
+            }
+    </script>
+</body>
+</html>
